@@ -10,6 +10,7 @@
 body {
     background-color: var(--background-color);
 }
+
 :root {
     --background-color: #f3efeb;
     --span-name: #9F414B;
@@ -23,16 +24,13 @@ body {
 }
 
 .header {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    text-align: end;
 }
 
-/* #logos {
-    display: flex;
-    justify-content: space-around;
+.header a {
+    padding: 0.5rem;
 }
-.logo {
-    width: 80px;
-} */
 
 .about {
     display: flex;
@@ -62,13 +60,9 @@ h2 span {
     color: var(--hover-effect);
 }
 
-.aboutme h3 {
-    font-size: 2.3rem;
-    margin-bottom: 0.7rem;
-}
-
-h3 span {
+.aboutme p span {
     color: var(--hover-effect);
+    font-size: 2rem;
 }
 
 .aboutme p {
@@ -80,13 +74,14 @@ h3 span {
 .wrkexp, .contact, footer {
     text-align: center;
 }
+
 .wrkexp h3, .contact h3{
     color: var(--hover-effect);
     font-size: 3rem;
     margin-bottom: 0.7rem;
 }
 
-.wrkexp p, .contact p, .contact a{
+.wrkexp p, .contact p, .header a{
     font-size: 1.1rem;
     margin-bottom: 0.7rem;
 }
@@ -116,10 +111,6 @@ a:hover {
 
 .contact {
     margin-bottom: 1rem;
-}
-
-.contact a {
-    padding: 0.5rem;
 }
 
 @media  only screen and (max-width: 500px) {
